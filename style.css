@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color:  rgb(17, 15, 15);
+}
+@keyframes unicornColor {
+    0% { color: #c27dc2; } /* Pink */
+    25% { color: #6e366e; } /* Purple */
+    50% { color: #4f4f80; } /* Blue */
+    75% { color: #307130; } /* Green */
+    100% { color: #873b3b; } /* Red */
+  }
+  
+.container{
+    background: rgb(41,21,63);
+    background: linear-gradient(90deg, rgba(41,21,63,1) 20%, rgba(31,59,91,1) 52%, rgba(4,12,22,1) 87%);
+    box-shadow: 0px 1px rgb(41, 4, 4);
+    max-width: 900px;
+    margin: auto;
+    
+}
+header h1{
+    margin: 30px 0 40px 0;
+    padding: 20px;
+    background-color:#101927; 
+    font-size: 30px; /* Adjust the font size as needed */
+    animation: unicornColor 5s infinite; /* 5s duration, infinite loop */
+
+
+}
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.grid-item1{
+    grid-column-start:1;
+    grid-column-end: 3;
+    /* background-color:rgb(48, 2, 2); */
+    padding: 20px;
+    color: white;
+    
+}
+/* .grid-item1 h1{
+    background-color: ;
+} */
